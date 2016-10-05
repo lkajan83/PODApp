@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4682B4">
+    <!-- CREATE DATABASE STARTS-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+        <!--BODY START CONTENTS -->
+        <!--BODY FINISH CONTENTS -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEditPSNDDelName"
+                android:hint="DELIVERY NAME" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEditPSNDDelAdd"
+                android:hint="DELIVERY ADDRESS" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEditPSNDAdd"
+                android:hint="ADDRESS" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText4"
+                android:hint="VOLUME" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEditPSNDNetWeight"
+                android:hint="NET WEIGHT" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEditPSNDNoUnits"
+                android:hint="NO UNITS" />
+            <Button
+                android:text="POD CAMERA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnPSNDPodCam" />
+            <Button
+                android:text="PROCESS POD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnPSNDProcessPod" />
+        </LinearLayout>
+    <!-- CREATE DATABASE ENDS-->
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4682B4">
+    <!-- CREATE DATABASE -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+        <!--  CustPackingSlipJour Button -->
+            <Button
+                android:text="CustPackingSlipJour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/BtnClickCustPackingSlipJour" />
+        <!--  LogisticPostalAddress  Button-->
+            <Button
+                android:text="LogisticPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/BtnClickLogisticPosAdd" />
+        <!--  LogisticsLocation  Button-->
+            <Button
+                android:text="LogisticsLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/BtnClickLogisticsLocation" />
+        <!--  DocuRef Button-->
+            <Button
+                android:text="DocuRef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/BtnClickDocuRef" />
+            <Button
+                android:text="Create Database"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/BtnClickDasBoardPSDB" />
+            <Button
+                android:text="Packing Slip Details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/BtnClickPackingSlipDetails" />
+            <Button
+                  android:text="Packing List Filter List"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="5dip"
+                  android:background="@drawable/Style_Login"
+                  android:id="@+id/BtnClickPodPackingListFilterList" />
+          
+        </LinearLayout>
+    <!-- Login Form Ends -->
+    </RelativeLayout>
+</ScrollView>

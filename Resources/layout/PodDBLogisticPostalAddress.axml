@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4682B4">
+    <!--  PodDBLogisticPostalAddress Location -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+        <!--RecId -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLPARecId"
+                android:hint="RecId (Auto)"
+                android:layout_marginTop="5dip"
+                android:gravity="center" />
+        <!--Address-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLPAAddress"
+                android:hint="Address"
+                android:layout_marginTop="5dip"
+                android:gravity="center" />
+        <!--ZipCode-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLPAZipCode"
+                android:hint="ZipCode"
+                android:layout_marginTop="5dip"
+                android:gravity="center" />
+        <!--Location-->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLPALocation"
+                android:layout_marginTop="5dip"
+                android:hint="Location"
+                android:gravity="center" />
+        <!--CREATE  DATABASE-->
+            <Button
+                android:text="CREATE  DATABASE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/Style_Login"
+                android:layout_marginTop="5dip"
+                android:id="@+id/LogPosAddressCD" />
+        <!--CREATE  TABLE-->
+            <Button
+                android:text="CREATE  TABLE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/Style_Login"
+                android:layout_marginTop="5dip"
+                android:id="@+id/LogPosAddressCT" />
+        <!--INSERT RECORD-->
+            <Button
+                android:text="INSERT RECORD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/LogPosAddressIR" />
+        <!--RETRIVE RECORD-->
+            <Button
+                android:text="RETRIVE RECORD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/LogPosAddressRR" />
+        <!--DELETE RECORD-->
+            <Button
+                android:text="DELETE RECORD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/LogPosAddressDR" />
+          <!-- list view -->
+          <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/PodDBLogisticPostalAddresslv" />
+        </LinearLayout>
+    <!-- PodDBLogisticPostalAddress Ends -->
+    </RelativeLayout>
+</ScrollView>
