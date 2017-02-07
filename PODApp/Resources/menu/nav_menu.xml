@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+      android:id="@+id/nav_homePage"
+      android:icon="@drawable/ic_dashboard"
+      android:title="Home Page" />
+    <!--<item
+      android:id="@+id/nav_Administrator"
+      android:icon="@drawable/ic_dashboard"
+      android:title="Administrator" />-->
+    <item
+      android:id="@+id/nav_AccountSettings"
+      android:icon="@drawable/ic_dashboard"
+      android:title="Account Settings" />
+    <!--<item
+      android:id="@+id/nav_TermsPolicies"
+      android:icon="@drawable/ic_dashboard"
+      android:title="Terms and Policies"/>-->
+    <item
+      android:id="@+id/nav_ReportAProblem"
+      android:icon="@drawable/ic_dashboard"
+      android:title="Report a Problem"/>
+    <item
+      android:id="@+id/nav_Help_Center"
+      android:icon="@drawable/ic_dashboard"
+      android:title="Help Center"/>
+    <item
+      android:id="@+id/nav_About"
+      android:icon="@drawable/ic_dashboard"
+      android:title="About us"/>
+    <item
+      android:id="@+id/nav_Logout"
+      android:icon="@drawable/ic_dashboard"
+      android:title="Logout"/>    
+  </group> 
+</menu>

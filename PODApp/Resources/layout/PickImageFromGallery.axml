@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/Gal31">
+  <Button
+      android:id="@+id/PodPickImageBtn"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/Style_RedButton"
+      android:text="Pick Image" />
+  <ImageView
+      android:src="@android:drawable/ic_menu_gallery"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/PodPickImageView" />
+</LinearLayout>
+

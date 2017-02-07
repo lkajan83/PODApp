@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/BCINT01">
+            <LinearLayout
+                android:background="#0099ff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#0099ff"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/Nav_HmeBACK"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtNVusername"
+                android:hint="USER NAME"
+                android:textColor="#000000"
+                android:background="#FFFAFA"
+                android:layout_marginTop="80dip"
+                android:layout_gravity="center"
+                android:gravity="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtNVpwd"
+                android:hint="PASSWORD"
+                android:textColor="#000000"
+                android:background="#FFFAFA"
+                android:password="true"
+                android:layout_marginTop="20dip"
+                android:gravity="center" />
+            <Button
+                android:text="LOGIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnNVlogin"
+                android:background="@drawable/Style_Login"
+                android:layout_marginTop="20dip" />
+        <!--BODY FINISH CONTENTS -->
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+<!--BUTTON START PAGE-->
+    <LinearLayout
+        android:id="@+id/LLBTMCMD80"
+        android:layout_alignParentBottom="true"
+        android:background="#0099ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/PodNaviSyn"
+            android:src="@drawable/PodiSyn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/PodNavHme"
+            android:src="@drawable/PodiHme"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/PodNavStg"
+            android:src="@drawable/PodStg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+<!--BUTTON  END PAGE-->
+</RelativeLayout>

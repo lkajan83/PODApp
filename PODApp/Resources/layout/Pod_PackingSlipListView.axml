@@ -3,37 +3,37 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true">
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#4682B4">
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="#4682B4">
     <!-- CREATE DATABASE STARTS-->
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dip">
-        <!--BODY START CONTENTS -->
-            <Button
-                android:text="RETRIEVE"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Pod_PackListFilterBtn" />
-        <!-- Search View-->
-            <SearchView
-                android:id="@+id/Pod_PackListFiltersv"
-                android:background="#33363c"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:minWidth="25px"
-                android:minHeight="25px" />
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/Pod_PackingListFilterlv" />
-        <!-- Listview -->
-        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip">
+      <!--BODY START CONTENTS -->
+      <Button
+          android:text="RETRIEVE"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/Pod_PackListFilterBtn" />
+      <!-- Search View-->
+      <SearchView
+          android:id="@+id/Pod_PackListFiltersv"
+          android:background="#33363c"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:minWidth="25px"
+          android:minHeight="25px" />
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/Pod_PackingListFilterlv" />
+      <!-- Listview -->
+    </LinearLayout>
     <!--BODY FINISH CONTENTS -->
     <!-- CREATE DATABASE ENDS-->
-    </RelativeLayout>
+  </RelativeLayout>
 </ScrollView>

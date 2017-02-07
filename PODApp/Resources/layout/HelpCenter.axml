@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/NavHelpCen_LL45">
+            <LinearLayout
+                android:background="#0099ff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#0099ff"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/Nav_HelpCenB2B"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/BackGroundPod"
+            android:layout_below="@+id/NavHelpCen_LL45">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <!-- CREATE DATABASE STARTS-->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <!--BODY START CONTENTS -->
+                        <FrameLayout
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Frame">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dip">
+                            <!--HERDER LOGO-->
+                                <TextView
+                                    android:text="Help Center"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Frame">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dip">
+                            <!--HERDER LOGO-->
+                                <TextView
+                                    android:text="Navigation"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center" />
+                                <TextView
+                                    android:text="The help centre should contain documentation on how the app works – this will act as the in app user guide. Use the below information as a foundation for the user guide."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                                <TextView
+                                    android:text="Anywhere in the POD app, select the   button to navigate to the packing slip list screen. On the POD home screen the   button to refresh the page to obtain the latest packing slips."
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                                <TextView
+                                    android:text="Choose the packing slip you wish to view more details for or add a photo/signature to navigate to the packing slip details screen."
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                                <TextView
+                                    android:text="There are two types of POD that can be captured from the packing slip details screen: -"
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip">
+                                    <ImageView
+                                        android:src="@drawable/PodbulletPoint"
+                                        android:layout_width="10dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginRight="15sp" />
+                                    <TextView
+                                        android:text="Image"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip">
+                                    <ImageView
+                                        android:src="@drawable/PodbulletPoint"
+                                        android:layout_width="10dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginRight="15sp" />
+                                    <TextView
+                                        android:text="Signature"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="left" />
+                                </LinearLayout>
+                                <TextView
+                                    android:text="Image: Select the   button to open the devices camera screen.Then, take a photo."
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <TextView
+                                    android:text="A photo review screen will be displayed, if you would like to save the image, click."
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                                <TextView
+                                    android:text="You can save as many images as you see fit, and they will be archived on the packing slip details screen."
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <TextView
+                                    android:text="Signature: Select the   button to open the signature pad screen. "
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <TextView
+                                    android:text="Once the signature is complete, select the   button to save the signature."
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                                <TextView
+                                    android:text=" The signature will be archived to the packing slip, only one signature can be saved per packing slip"
+                                    android:layout_marginTop="10dip"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    <!--Account Settings-->
+                        <FrameLayout
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Frame">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dip">
+                            <!--HERDER LOGO-->
+                                <TextView
+                                    android:text="Account Settings"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center" />
+                                <TextView
+                                    android:text="Once the user has selected the option “Account Settings” the below screen should be displayed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                                <TextView
+                                    android:text="Once the change password button is selected – navigate to the below page."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    <!--Report a Problem-->
+                        <FrameLayout
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Frame">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dip">
+                            <!--HERDER LOGO-->
+                                <TextView
+                                    android:text="Report a Problem"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center" />
+                                <TextView
+                                    android:text="This should take the user to the customer portal of Atlassian JIRA support desk."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:gravity="left" />
+                                <ImageView
+                                    android:src="@drawable/Nav_LoginScreen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp"
+                                    android:gravity="center"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    <!--About us-->
+                        <FrameLayout
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Frame">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dip">
+                            <!--HERDER LOGO-->
+                                <TextView
+                                    android:text="About us"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center" />
+                                <TextView
+                                    android:text="What is POD?"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:gravity="left" />
+                                <TextView
+                                    android:text="Proof of delivery (POD) is a method to show that the recipient received the contents sent by the sender. When the sender sends a document through the mail there is a possibility of the mail not reaching the intended recipient."
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dip"
+                                    android:gravity="left" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    <!--<WebView
+                            android:id="@+id/NavHelpCenwebview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />-->
+                    <!--BODY FINISH CONTENTS -->
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+    <LinearLayout
+        android:background="#00AEEF"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <!--android:layout_height="wrap_content">-->
+        <ImageView
+            android:id="@+id/NavHelpCen_PodiSyn"
+            android:src="@drawable/PodStg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/NavHelpCen_PodiHme"
+            android:src="@drawable/PodiHme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/NavHelpCen_PodStg"
+            android:src="@drawable/PodiSyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#4682B4">
+    <!-- CREATE DATABASE STARTS-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+        <!--BODY START CONTENTS -->
+            <TextView
+                android:text="ADMINISTRATOR"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblAdminDashboard"
+                android:gravity="center" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAdminusername"
+                android:hint="USER NAME" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAdminpwd"
+                android:hint="PASSWORD"
+                android:password="true" />
+            <Button
+                android:text="LOGIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/btnAdminlogin" />
+            <Button
+                android:text="REGISTER"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/btnAdminregister" />
+        <!--BODY FINISH CONTENTS -->
+        <!--  android:visibility="invisible" -->
+        </LinearLayout>
+    <!-- CREATE DATABASE ENDS-->
+    </RelativeLayout>
+</ScrollView>

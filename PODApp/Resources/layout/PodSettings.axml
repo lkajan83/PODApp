@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/BackGroundPod">
+  <android.support.v4.widget.DrawerLayout
+      android:id="@+id/drawer_layout"
+      android:layout_height="match_parent"
+      android:layout_width="fill_parent"
+      android:fitsSystemWindows="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/BackGroundPod"
+        android:id="@+id/nav_SubDoneLL50">
+      <LinearLayout
+          android:background="#0099ff"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1"
+            android:background="#0099ff"
+            layout="@layout/toolbar" />
+        <ImageView
+            android:id="@+id/NavStn_BaktoHme"
+            android:background="#0099ff"
+            android:src="@drawable/ArrowBack"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <!--BODY START CONTENTS -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="35sp">
+      <!--HERDER LOGO-->
+      <ImageView
+          android:src="@drawable/PODLOGO"
+          android:layout_width="match_parent"
+          android:layout_marginTop="20dip"
+          android:layout_height="150dp" />
+      <Button
+          android:id="@+id/NavStn_Btn"
+          android:text="Packing  Slip"
+          android:layout_width="match_parent"
+          android:layout_height="50dip"
+          android:background="@drawable/Style_Login"
+          android:layout_marginTop="10dip"
+          android:textColor="@android:color/primary_text_dark"
+          android:textStyle="bold" />
+      <!--BODY FINISH CONTENTS -->
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        local:headerLayout="@layout/nav_header" />
+  </android.support.v4.widget.DrawerLayout>
+  <LinearLayout
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:background="#0099ff"
+      android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/NavStn_PodiSyn"
+        android:src="@drawable/PodiSyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_weight="1" />
+    <ImageView
+        android:id="@+id/NavStn_PodiHme"
+        android:src="@drawable/PodiHme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_weight="1" />
+    <ImageView
+        android:id="@+id/NavStn_PodStg"
+        android:src="@drawable/PodStg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_weight="1" />
+  </LinearLayout>
+</RelativeLayout>

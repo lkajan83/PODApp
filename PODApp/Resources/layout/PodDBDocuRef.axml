@@ -75,10 +75,10 @@
                 android:layout_marginTop="5dip"
                 android:background="@drawable/Style_Login"
                 android:id="@+id/DocRefDR" />
-          <ListView
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:id="@+id/PodDocReflv" />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/PodDocReflv" />
         </LinearLayout>
     <!-- PodDBDocu Location Ends -->
     </RelativeLayout>

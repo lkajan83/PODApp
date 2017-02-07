@@ -6,13 +6,13 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#4682B4">
+        android:background="@drawable/Gal31">
     <!-- CREATE DATABASE STARTS-->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dip">
+            android:padding="50dip">
         <!--BODY START CONTENTS -->
         <!--BODY FINISH CONTENTS -->
             <Button
@@ -20,13 +20,48 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/Pod_Administrator"
-                android:height="70dp" />
+                android:height="100dp"
+                android:layout_marginTop="80dp"
+                android:textSize="30dip"
+                android:textStyle="bold"
+                android:background="@drawable/Style_Login"
+                android:textColor="@android:color/primary_text_dark" />
             <Button
                 android:text="USERS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/Pod_Users"
-                android:height="70dp"/>
+                android:height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dip"
+                android:background="@drawable/Style_Login"
+                android:textColor="@android:color/primary_text_dark" />
+            <Button
+                android:text="Grid View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Pod_GridView"
+                android:height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dip"
+                android:background="@drawable/Style_Login"
+                android:textColor="@android:color/primary_text_dark" />
+            <Button
+                android:text="Packing Slip Code Line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PodL_PsclLayer"
+                android:height="100dp"
+                android:textStyle="bold"
+                android:textSize="30dip"
+                android:background="@drawable/Style_Login"
+                android:textColor="@android:color/primary_text_dark" />
+            <Button
+                android:text="Animated Admin Panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PodBtnAnAdmin"
+                android:background="@drawable/Style_Login" />
         </LinearLayout>
     <!-- CREATE DATABASE ENDS-->
     </RelativeLayout>

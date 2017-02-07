@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nav_messageLL50">
+            <LinearLayout
+                android:id="@+id/LLBTMCMD80"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/Nav_MsgIV93"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dip">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/Gal31">
+                <!-- CREATE DATABASE STARTS-->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dip"
+                        android:layout_below="@+id/nav_messageLL50">
+                        <TextView
+                            android:layout_margin="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Message"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:singleLine="true" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/monkey" />
+                        <TextView
+                            android:layout_margin="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Message"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:singleLine="true" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/monkey" />
+                    <!--BODY FINISH CONTENTS -->
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="#0099ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/Mess_PodNaviSyn"
+            android:src="@drawable/PodiSyn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/Mess_PodNavHme"
+            android:src="@drawable/PodiHme"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/Mess_PodNavStg"
+            android:src="@drawable/PodStg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

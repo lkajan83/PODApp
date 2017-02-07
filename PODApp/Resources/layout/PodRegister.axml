@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5">
+  <!-- CREATE DATABASE STARTS-->
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <!-- CREATE DATABASE STARTS-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25sp">
+                <!--BODY START CONTENTS -->
+                    <ImageView
+                        android:src="@drawable/PODLOGO"
+                        android:layout_width="match_parent"
+                        android:id="@+id/PodUserImgView"
+                        android:layout_marginTop="5dip"
+                        android:layout_height="150dp" />
+                    <EditText
+                        android:id="@+id/txt_reg_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="USER NAME"
+                        android:textColor="#000000"
+                        android:background="#FFFAFA"
+                        android:layout_marginTop="10dip"
+                        android:layout_gravity="center"
+                        style="#696969"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/txt_reg_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="PASSWORD"
+                        android:textColor="#000000"
+                        android:background="#FFFAFA"
+                        android:password="true"
+                        android:layout_marginTop="10dip"
+                        style="#696969"
+                        android:gravity="center" />
+                </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+  </LinearLayout>     
+   <LinearLayout
+                    android:background="#00AEEF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <!--android:layout_height="wrap_content">-->
+                <!-- CREATE IMAGE-->
+                    <ImageView
+                        android:id="@+id/btn_reg_create"
+                        android:src="@drawable/PodimgReg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_weight="1" />
+                <!--CREATE IMAGE-->
+                    <ImageView
+                        android:id="@+id/PodRegLogInBck"
+                        android:src="@drawable/PodimgBak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+ </RelativeLayout>

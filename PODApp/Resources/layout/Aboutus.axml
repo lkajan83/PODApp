@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/NavAboutUs_LL45">
+            <LinearLayout
+                android:background="#0099ff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#0099ff"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/NavAbotUsBaK"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/BackGroundPod">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <!-- CREATE DATABASE STARTS-->
+                <!--BODY START CONTENTS ....................-->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dip">
+                    <!--BODY FINISH CONTENTS -->
+                        <FrameLayout
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Frame">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dip">
+                            <!--HERDER LOGO-->
+                                <TextView
+                                    android:text="What is POD?"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <FrameLayout
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Frame">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dip">
+                            <!--HERDER LOGO-->
+                                <TextView
+                                    android:text="Proof of delivery (POD) is a method to show that the recipient received the contents sent by the sender. When the sender sends a document through the mail there is a possibility of the mail not reaching the intended recipient."
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                -->
+            <!-- CREATE DATABASE STARTS-->
+            <!--
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/NavAboutUs_LL45">
+                    -->
+            <!--BODY START CONTENTS -->
+            <!--
+                        <WebView
+                            android:id="@+id/NavAbtUsWebview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    -->
+            <!--BODY FINISH CONTENTS -->
+            <!--
+                    </LinearLayout>
+                </RelativeLayout>-->
+            </ScrollView>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+    <LinearLayout
+        android:background="#00AEEF"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <!--android:layout_height="wrap_content">-->
+        <ImageView
+            android:id="@+id/NavAboutUs_PodiSyn"
+            android:src="@drawable/PodStg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/NavAboutUs_PodiHme"
+            android:src="@drawable/PodiHme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/NavAboutUs_PodStg"
+            android:src="@drawable/PodiSyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

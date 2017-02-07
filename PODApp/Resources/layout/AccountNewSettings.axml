@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/NavAccSet_LL45">
+            <LinearLayout
+                android:background="#0099ff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#0099ff"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/NavAccSet_B2ASet"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:background="@drawable/BackGroundPod">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <!-- CREATE DATABASE STARTS-->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="25sp">
+                    <!--BODY START CONTENTS -->
+                    <!--BODY START CONTENTS -->
+                        <ImageView
+                            android:src="@drawable/PODLOGO"
+                            android:layout_width="match_parent"
+                            android:id="@+id/PodActSetHmeImgView"
+                            android:layout_marginTop="5dip"
+                            android:layout_height="150dp" />
+                        <EditText
+                            android:id="@+id/PodResetOldPWD"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="OLD PASSWORD"
+                            android:textColor="#000000"
+                            android:background="#FFFAFA"
+                            android:password="true"
+                            android:layout_marginTop="10dip"
+                            android:layout_gravity="center"
+                            style="#696969"
+                            android:gravity="center" />
+                        <EditText
+                            android:id="@+id/PodResetNewPWD"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="NEW PASSWORD"
+                            android:textColor="#000000"
+                            android:background="#FFFAFA"
+                            android:password="true"
+                            android:layout_marginTop="10dip"
+                            style="#696969"
+                            android:gravity="center" />
+                        <EditText
+                            android:id="@+id/PodResetConPWD"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="CONFORM PASSWORD"
+                            android:textColor="#000000"
+                            android:background="#FFFAFA"
+                            android:password="true"
+                            android:layout_marginTop="10dip"
+                            style="#696969"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+    <LinearLayout
+        android:background="#00AEEF"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <!--android:layout_height="wrap_content">-->
+        <ImageView
+            android:id="@+id/PodResetSaveBtn"
+            android:src="@drawable/PodimgSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:src="@drawable/PodimgBak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

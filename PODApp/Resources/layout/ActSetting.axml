@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80sp"
+            android:id="@+id/NavAboutUs_LL45">
+            <LinearLayout
+                android:background="#0099ff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#0099ff"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/NavAbotUsBaK"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    <!--ON/OFF - togglebutton-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_below="@+id/NavAboutUs_LL45">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <!--Custom Line-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50sp">
+                            <TextView
+                                android:text="Customer Line"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+                            <ToggleButton
+                                android:id="@+id/CusCollapse"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
+                                android:background="@drawable/Style_Toggle"
+                                android:gravity="center"
+                                android:textOn="ON"
+                                android:textOff="OFF"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:layout_marginRight="10sp"
+                                android:textSize="@dimen/abc_action_bar_content_inset_material" />
+                        </LinearLayout>
+                    <!-- Picture Resolution -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50sp">
+                            <TextView
+                                android:text="@string/planet_prompt"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1"
+                                android:textStyle="bold" />
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:gravity="center"
+                                android:prompt="@string/planet_prompt" />
+                        </LinearLayout>
+                    <!--Manual Sort-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50sp">
+                            <TextView
+                                android:text="Manual Sort"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+                            <ToggleButton
+                                android:id="@+id/PicManulSrt"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
+                                android:background="@drawable/Style_Toggle"
+                                android:gravity="center"
+                                android:textOn="ON"
+                                android:textOff="OFF"
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:layout_marginRight="10sp"
+                                android:textSize="@dimen/abc_action_bar_content_inset_material" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+<!--Bottom Layer-->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#0099ff"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/NavSet_PodStg"
+            android:src="@drawable/PodStg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/NavSet_PodiHme"
+            android:src="@drawable/PodiHme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/NavSet_PodiSyn"
+            android:src="@drawable/PodiSyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

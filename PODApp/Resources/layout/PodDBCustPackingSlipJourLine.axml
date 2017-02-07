@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/NavCpsLine_LL45">
+            <LinearLayout
+                android:id="@+id/NavCpsLne_LL20"
+                android:background="#0099ff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#0099ff"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/NavPSJLine_ImgBke"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/NavCpsLine_LL45"
+            android:background="@drawable/BackGroundPod">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <!-- CREATE DATABASE STARTS-->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="15sp">
+                    <!--REPORT BUTTON-->
+                    <!--<TextView
+                            android:id="@+id/PodL_RetrieveRecord"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="REPORTS"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp" />-->
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/PodL_CPJLineId"
+                            android:visibility="invisible"
+                            android:hint="LINE ID" />
+                      <!--Status-->
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                        <TextView
+                            android:text="STATUS"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="5sp"
+                            android:layout_width="150dip"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text=":"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_height="wrap_content" />
+                        <!--DELIVERY NAME-->
+                        <EditText
+                            android:id="@+id/PodL_Status"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:hint="STATUS"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:gravity="left" />
+                      </LinearLayout>
+                      <!--OrderDate  -->
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                        <TextView
+                            android:text="ORDER DATE"
+                            android:textStyle="bold"
+                            android:textSize="13sp"
+                            android:textColor="#000000"
+                            android:layout_marginRight="5sp"
+                            android:layout_width="150dip"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text=":"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/PodL_DateDisplay"
+                            android:text="Pick Date"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_width="200dip"
+                            android:textSize="13sp"
+                            android:layout_marginRight="5sp"
+                            android:layout_height="wrap_content" />
+                        <Button
+                            android:id="@+id/PodL_InsertDate"
+                            android:text="PICK DATE"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:hint="ORDER DATE"
+                            android:textColor="#ECF0F1"
+                            android:textSize="13sp"
+                            android:background="@drawable/Style_Login" />
+                      </LinearLayout>
+
+                      <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="PACKING SLIP ID"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--PACKING SLIP ID-->
+                            <EditText
+                                android:id="@+id/PodL_PackingSlipId"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="PACKING SLIP ID"
+                                android:textColor="#000000"
+                                android:layout_gravity="left"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="ITEM"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--ITEM-->
+                            <EditText
+                                android:id="@+id/PodL_Item"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="ITEM"
+                                android:textColor="#000000"
+                                android:layout_gravity="left"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="DESCRIPTION"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--DESCRIPTION-->
+                            <EditText
+                                android:id="@+id/PodL_Description"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="DESCRIPTION"
+                                android:textColor="#000000"
+                                android:layout_gravity="left"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--UNITS-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="UNIT"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--UNITS-->
+                            <EditText
+                                android:id="@+id/PodL_Unit"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="UNIT"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:textColor="#000000"
+                                android:layout_gravity="left"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--UNITS-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="QTY"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/PodL_Qty"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="QTY"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:textColor="#000000"
+                                android:layout_gravity="left"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <!--SAVE IMAGE-->
+                            <ImageView
+                                android:id="@+id/PodL_RetrieveRecord"
+                                android:src="@drawable/PodimgBak"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1" />
+                        <!--<ImageView
+                                android:id="@+id/PodL_CreateDatabase"
+                                android:src="@drawable/PodimgCrDB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1" />-->
+                            <ImageView
+                                android:id="@+id/PodL_CreateTable"
+                                android:src="@drawable/PodimgCrTB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1" />
+                        <!--INSERT IMAGE-->
+                            <ImageView
+                                android:id="@+id/PodL_InsertRecord"
+                                android:src="@drawable/PodimgCrIR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ListView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/PodL_ListView" />
+                        </LinearLayout>
+                    <!--<FrameLayout
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:layout_marginBottom="50dip"
+                            android:background="@drawable/Style_Frame">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                          <ListView
+                              android:id="@+id/PodPackingSlipListView"
+                              android:visibility="invisible"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginBottom="0.0dp"
+                              android:layout_marginTop="0.0dp" />
+                        </LinearLayout>
+                      </FrameLayout>-->
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+<!--<LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="#0099ff"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+        <ImageView
+            android:id="@+id/PodL_CreateDatabase"
+            android:src="@drawable/PodimgCrDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/PodL_CreateTable"
+            android:src="@drawable/PodimgCrTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/PodL_InsertRecord"
+            android:src="@drawable/PodimgCrIR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+    </LinearLayout>-->
+</RelativeLayout>

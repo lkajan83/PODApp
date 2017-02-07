@@ -2,6 +2,44 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">PODApp</string>
-    <string name="openCamera">Open Camera</string>
-    <string name="app_name">CameraAppDemo</string>
+    <string name="Camera">CAMERA</string>
+    <string name="openCamera">OPEN CAMERA</string>
+    <string name="app_name">PODApp</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string name="planet_prompt">Picture Resolution</string>
+    <string-array name="planets_array">
+      <item>Small(38,1KB)</item>
+      <item>Medium(101KB)</item>
+      <item>Large(571KB)</item>
+    </string-array>
+
+
+  <string-array name="countries">
+    <item>Sweden</item>
+    <item>Norway</item>
+    <item>Finland</item>
+    <item>Denmark</item>
+    <item>Germany</item>
+    <item>Poland</item>
+    <item>Netherlands</item>
+    <item>Belgium</item>
+  </string-array>
+  <string-array name="menu">
+    <item>Edit</item>
+    <item>Delete</item>
+    <item>Send</item>
+  </string-array>
 </resources>
+
+
+
+
+
+
+
+
+
+

@@ -6,67 +6,64 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#4682B4">
+        android:background="@drawable/Gal31">
     <!-- CREATE DATABASE -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dip">
+            android:padding="25dip">
         <!--  CustPackingSlipJour Button -->
-            <Button
-                android:text="CustPackingSlipJour"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:background="@drawable/Style_Login"
-                android:id="@+id/BtnClickCustPackingSlipJour" />
         <!--  LogisticPostalAddress  Button-->
             <Button
                 android:text="LogisticPostalAddress"
+                android:visibility="invisible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
                 android:background="@drawable/Style_Login"
                 android:id="@+id/BtnClickLogisticPosAdd" />
         <!--  LogisticsLocation  Button-->
             <Button
+                android:text="CustPackingSlipJour"
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/BtnClickCustPackingSlipJour" />
+            <Button
                 android:text="LogisticsLocation"
+                android:visibility="invisible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
                 android:background="@drawable/Style_Login"
                 android:id="@+id/BtnClickLogisticsLocation" />
         <!--  DocuRef Button-->
             <Button
                 android:text="DocuRef"
+                android:visibility="invisible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
                 android:background="@drawable/Style_Login"
                 android:id="@+id/BtnClickDocuRef" />
             <Button
                 android:text="Create Database"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
+                android:visibility="invisible"
                 android:background="@drawable/Style_Login"
                 android:id="@+id/BtnClickDasBoardPSDB" />
             <Button
                 android:text="Packing Slip Details"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
+                android:layout_height="80dip"
                 android:background="@drawable/Style_Login"
                 android:id="@+id/BtnClickPackingSlipDetails" />
             <Button
-                  android:text="Packing List Filter List"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:layout_marginTop="5dip"
-                  android:background="@drawable/Style_Login"
-                  android:id="@+id/BtnClickPodPackingListFilterList" />
-          
+                android:text="Packing List Filter List"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:background="@drawable/Style_Login"
+                android:id="@+id/BtnClickPodPackingListFilterList" />
         </LinearLayout>
     <!-- Login Form Ends -->
     </RelativeLayout>

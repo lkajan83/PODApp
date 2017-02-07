@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/nav_AdmAdmDoneLL50">
+            <LinearLayout
+                android:id="@+id/AniAdminLLout75"
+                android:background="#0099ff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#0099ff"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/NavAd_AdminImgBke"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/nav_AdmAdmDoneLL50"
+            android:background="@drawable/BackGroundPod">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="25sp">
+                    <!--PACKING SLIP FILTER LIST-->
+                        <Button
+                            android:id="@+id/righttoleft"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PACKING SLIP FILTER LIST"
+                            android:background="@drawable/Style_Login"
+                            android:layout_marginTop="20sp" />
+                    <!--HEADING-->
+                        <TextView
+                            android:text="INSERT RECORDS"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:gravity="center"
+                            android:layout_marginTop="10dip" />
+                    <!--PACKING SLIP DETAILS-->
+                        <Button
+                            android:id="@+id/bottomtotop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Login"
+                            android:text="PACKING SLIP DETAILS"
+                            android:layout_marginTop="20sp" />
+                    <!--INSERT PACKING SLIP LINE-->
+                        <Button
+                            android:id="@+id/lefttoright"
+                            android:text="INSERT PACKING SLIP JOUR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Login"
+                            android:layout_marginTop="20sp" />
+                     <!--INSERT PACKING SLIP LINE-->
+                        <Button
+                            android:id="@+id/Attnt_InstPackingSlipId"
+                            android:text="INSERT PACKING SLIP ATTACHMENT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Login"
+                            android:layout_marginTop="20sp" />
+                    
+                    <!--INSERT PACKING SLIP LINE-->
+                        <Button
+                            android:id="@+id/toptobottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/Style_Login"
+                            android:text="REPORTS"
+                            android:layout_marginTop="20sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+    <LinearLayout
+        android:background="#00AEEF"
+        android:layout_marginTop="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <!--android:layout_height="wrap_content">-->
+        <ImageView
+            android:id="@+id/AnAdPan_PodStg"
+            android:src="@drawable/PodStg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/AnAdPan_PodiHme"
+            android:src="@drawable/PodiHme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/AnAdPan_PodiSyn"
+            android:src="@drawable/PodiSyn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

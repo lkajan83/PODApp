@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="bottom">
+    <ImageView
+        android:src="@drawable/IntelisenseIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <TextView
+        android:text="Kajan Tharmalingam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/navheader_username"
+        android:textColor="#000000"
+        android:textSize="14dp" />
+</LinearLayout>

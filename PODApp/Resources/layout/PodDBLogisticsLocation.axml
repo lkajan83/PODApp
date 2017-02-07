@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#4682B4">
+         android:background="@drawable/Gal31">
     <!-- Logistic Location -->
         <LinearLayout
             android:orientation="vertical"
@@ -77,8 +77,7 @@
                 android:layout_marginTop="5dip"
                 android:background="@drawable/Style_Login"
                 android:id="@+id/LogLocationDR" />
-
-          <!--<GridView
+        <!--<GridView
               android:id="@+id/PodLogLocationgv"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
@@ -88,7 +87,7 @@
               android:horizontalSpacing="10dp"
               android:stretchMode="columnWidth"
               android:gravity="center" />-->
-           <!--<SearchView
+        <!--<SearchView
                 android:id="@+id/sv"
                 android:textColor="#000"
                 android:background="#33363c"

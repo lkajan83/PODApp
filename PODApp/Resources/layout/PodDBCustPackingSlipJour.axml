@@ -1,111 +1,572 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:fillViewport="true">
-    <RelativeLayout
+    android:layout_height="fill_parent">
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_height="match_parent"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="#4682B4">
-    <!-- CREATE DATABASE STARTS-->
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/NavCPS_LL45">
+            <LinearLayout
+                android:id="@+id/NavCPS_LL50"
+                android:background="#0099ff"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <include
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1"
+                    android:background="#0099ff"
+                    layout="@layout/toolbar" />
+                <ImageView
+                    android:id="@+id/NavPSJ_ImgBke"
+                    android:background="#0099ff"
+                    android:src="@drawable/ArrowBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dip">
-        <!-- RECID-->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:id="@+id/txtCPSJRecId"
-                android:hint="REC ID" />
-        <!-- DEVICE ID-->
-        <!-- PACKING SLIP ID-->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:id="@+id/txtCPSJPackingSlipId"
-                android:hint="PACKING SLICK NO " />
-        <!-- QTY-->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtCPSJDeliveryName"
-                android:hint="DELIVERY NAME           "
-                android:layout_marginTop="5dip" />
-        <!-- VOLUME-->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtCPSJDelDesc"
-                android:hint="DELIVERY DESCRIPTION  " />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtCPSJDelAdd"
-                android:hint="DELIVERY ADDRESS" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtCPSJDelPCode"
-                android:hint="DELIVERY POST CODE " />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtCPSJVolume"
-                android:layout_marginTop="5dip"
-                android:hint="VOLUME   " />
-        <!-- WEIGHT-->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/txtCPSJWeight"
-                android:layout_marginTop="5dip"
-                android:hint="NET WEIGHT" />
-        <!-- DELIVERY NAME-->
-        <!-- CREATE DATABASE-->
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                android:id="@+id/txtCPSJNoUnit"
-                android:hint="NO UNITS" />
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/linearLayout1">
-                <Button
-                    android:text="DATABASE"
-                    android:id="@+id/CustPSlipJourDB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
-                <Button
-                    android:text="TABLE"
-                    android:id="@+id/CustPSlipJourCT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
-                <Button
-                    android:text="INSERT"
-                    android:id="@+id/CustPSlipJourIR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
-                <Button
-                    android:text="RETRIEVE "
-                    android:id="@+id/CustPSlipJourRR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
-            </LinearLayout>
-        <!-- CREATE  TABLE-->
-
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/ImgCPSJIView" />
+            android:layout_marginTop="50dp"
+            android:background="@drawable/BackGroundPod">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <!-- CREATE DATABASE STARTS-->
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:layout_below="@+id/NavCPS_LL45">
+                    <!--RECID-->
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:layout_marginTop="5dip"
+                            android:id="@+id/txtCPSJRecId"
+                            android:hint="REC ID" />
+                    <!--PACKING SLIP ID-->
+                    <!--<EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:id="@+id/txtCPSJPackingSlipId"
+                            android:hint="PACKING SLICK NO " />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="PACKING SLICK NO"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--User Neame-->
+                            <EditText
+                                android:id="@+id/txtCPSJPackingSlipId"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="PACKING SLICK NO"
+                                android:textColor="#000000"
+                                android:layout_gravity="left"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--DeviceId-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="DEVICES ID"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                         <!--DeviceId-->
+                            <EditText
+                                android:id="@+id/txtCPSJDeviceId"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="DEVICES ID"
+                                android:textColor="#000000"
+                                android:layout_gravity="left"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--Status-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="STATUS"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--DELIVERY NAME-->
+                            <EditText
+                                android:id="@+id/txtCPSJStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="STATUS"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--OrderDate  -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="ORDER DATE"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                            <EditText
+                                android:id="@+id/PkSip_DateDisplay"
+                                android:text="Pick Date"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:layout_width="200dip"
+                                android:textSize="13sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                            <Button
+                                android:id="@+id/PckSlp_InsertDate"
+                                android:text="PICK DATE"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:hint="ORDER DATE"
+                                android:textColor="#ECF0F1"
+                                android:textSize="13sp"
+                                android:background="@drawable/Style_Login" />
+                        </LinearLayout>
+                    <!--DELIVERY NAME-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="DELIVERY NAME"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--DELIVERY NAME-->
+                            <EditText
+                                android:id="@+id/txtCPSJDeliveryName"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="DELIVERY NAME"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--DELIVERY DESCRIPTION-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="DESCRIPTION"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--DELIVERY DESCRIPTION-->
+                            <EditText
+                                android:id="@+id/txtCPSJDelDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="DESCRIPTION"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--DELIVERY ADDRESS-->
+                    <!--
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCPSJDelAdd"
+                            android:hint="DELIVERY ADDRESS" />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="DELIVERY ADDRESS"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--DELIVERY ADDRESS-->
+                        <!--<EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCPSJDelAdd"
+                            android:hint="DELIVERY ADDRESS" />-->
+                            <EditText
+                                android:id="@+id/txtCPSJDelAdd"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="DELIVERY ADDRESS"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--POST CODE-->
+                    <!--<EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCPSJDelPCode"
+                            android:hint="DELIVERY POST CODE " />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="POST CODE"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--POST CODE-->
+                        <!--<EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCPSJDelPCode"
+                            android:hint="DELIVERY POST CODE " />-->
+                            <EditText
+                                android:id="@+id/txtCPSJDelPCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="POST CODE"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--VOLUME-->
+                    <!--<EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCPSJVolume"
+                            android:layout_marginTop="5dip"
+                            android:hint="VOLUME   " />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="VOLUME"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--VOLUME-->
+                        <!--<EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCPSJVolume"
+                            android:layout_marginTop="5dip"
+                            android:hint="VOLUME   " />-->
+                            <EditText
+                                android:id="@+id/txtCPSJVolume"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="VOLUME"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--android:inputType="numberDecimal"-->
+                    <!--NET WEIGHT-->
+                    <!--
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCPSJWeight"
+                            android:layout_marginTop="5dip"
+                            android:hint="NET WEIGHT" />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="NET WEIGHT"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="20dip"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--NET WEIGHT-->
+                        <!--
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtCPSJWeight"
+                            android:layout_marginTop="5dip"
+                            android:hint="NET WEIGHT" />-->
+                            <EditText
+                                android:id="@+id/txtCPSJWeight"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="NET WEIGHT"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                    <!--NO UNITS-->
+                    <!--
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:id="@+id/txtCPSJNoUnit"
+                            android:hint="NO UNITS" />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="NO UNITS"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="#000000"
+                                android:layout_marginRight="5sp"
+                                android:layout_width="150dip"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text=":"
+                                android:textColor="#000000"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="5sp"
+                                android:layout_height="wrap_content" />
+                        <!--NO UNITS-->
+                        <!--<EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dip"
+                            android:id="@+id/txtCPSJNoUnit"
+                            android:hint="NO UNITS" />-->
+                            <EditText
+                                android:id="@+id/txtCPSJNoUnit"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="NO UNITS"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:textColor="#000000"
+                                android:textSize="13sp"
+                                android:gravity="left" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip">
+                        <!--<ImageView
+                                android:id="@+id/CustPSlipJourDB"
+                                android:src="@drawable/PodimgCrDB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1" />
+                            <ImageView
+                                android:id="@+id/CustPSlipJourCT"
+                                android:src="@drawable/PodimgCrTB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1" />
+                            <ImageView
+                                android:id="@+id/CustPSlipJourIR"
+                                android:src="@drawable/PodimgCrIR"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:layout_weight="1" />-->
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <!--<include
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1"
+                            android:background="#0099ff"
+                            layout="@layout/Nav_Footer" />-->
+                    <!--SAVE IMAGE-->
+                        <ImageView
+                            android:id="@+id/CustPSlipJourIR"
+                            android:src="@drawable/PodimgCrIR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1" />
+                        <ImageView
+                            android:id="@+id/CustPSlipJourCT"
+                            android:src="@drawable/PodimgCrTB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1" />
+                    <!--BACK IMAGE-->
+                        <ImageView
+                            android:id="@+id/CustPSBack2mMn"
+                            android:src="@drawable/PodimgBak"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1" />
+                    <!--<ImageView
+                            android:id="@+id/CustPSlipJourDB"
+                            android:src="@drawable/PodimgCrDB"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5sp"
+                            android:layout_marginRight="5sp"
+                            android:layout_weight="1" />-->
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
         </LinearLayout>
-    <!-- CREATE DATABASE ENDS-->
-    </RelativeLayout>
-</ScrollView>
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            local:headerLayout="@layout/nav_header" />
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
